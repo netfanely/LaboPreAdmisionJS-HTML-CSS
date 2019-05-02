@@ -1,5 +1,33 @@
 <html>
 <body>
-  <h3>pagina 2</h3>
+  <h3>CULTURA GENERAL</h3>
+  <p><form action="apps.js" method="get" name="form2">
+  <h4>¿Quién es el autor de el Don Quijote de la Mancha?</h4>
+  <input type="checkbox" name="1" value="1">Miguel de Unamuno<br>
+  <input type="checkbox" name="2" value="2">Miguel de Cervantes<br>
+  <input type="checkbox" name="3" value="3">Sancho Panza</p>
+  <h4>¿Quién fue el primer hombre en pisar la luna?</h4>
+  <input type="checkbox" name="1" value="1">Neil Armstrong<br>
+  <input type="checkbox" name="2" value="2">David Scott<br>
+  <input type="checkbox" name="3" value="3">Buzz Aldrin</p>
+  <h4>¿Cuál es el nombre del fundador de Facebook?</h4>
+  <input type="checkbox" name="1" value="1">Mark Zuckerberg<br>
+  <input type="checkbox" name="2" value="2">Steve Jobs<br>
+  <input type="checkbox" name="3" value="3">Bill Gates</p>
+  <h4>¿En qué país se encuentra el Taj Mahal?</h4>
+  <input type="checkbox" name="1" value="1">China<br>
+  <input type="checkbox" name="2" value="2">Taiwan<br>
+  <input type="checkbox" name="3" value="3">India</p>
+  <button type="submit" id="botonEnviar" name="ENVIAR"><h3>ENVIAR RESPUESTAS</h3></button>
+  <button type="button" id="botonWindowClose" name="Close"><h3>CERRAR</h3></button>
+
+</form>
+<SCRIPT>
+  var miVentana;
+  function window_close(){
+  this.close();
+}
+  document.getElementById("botonWindowClose").onclick = function() {window_close()};
+</SCRIPT>
 </body>
 </html>
