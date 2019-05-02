@@ -13,12 +13,24 @@
         document.writeln("<h1>Bienvenida a la TRIVIA, Vamos a Jugar!!</h1>");
         // -->
     </script>
+    <script language="JavaScript">
+    function changeColor(btn) {
+      btn.style.backgroundColor = "green";
+    }
+    </script>
 </head>
 <body>
 <h2>Por favor escoge tu opción de Juego: </h2>
-<ol>
-  <li><h3>Cultura General</h3></li>
-  <li><h3>Miscelanea</h3></li>
-</ol>
+<div class="wrapper">
+
+<form action="/action_page.php" method="get" name="form1">
+  <ol>
+  <li><button type="button" onclick="changeColor(this)" name="cultura"><h3>Cultura General</h3></button></li>
+  <li><button type="button" onclick="changeColor(this)" name="Miscelanea"><h3>Miscelanea</h3></button></li>
+  <li><button type="button" onclick="changeColor(this)" name="Cine"><h3>Cine</h3></button></li>
+  </ol>
+</form>
+</div>
+
 </body>
 </html>
