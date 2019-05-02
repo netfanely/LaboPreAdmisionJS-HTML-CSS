@@ -13,24 +13,48 @@
         document.writeln("<h1>Bienvenida a la TRIVIA, Vamos a Jugar!!</h1>");
         // -->
     </script>
-    <script language="JavaScript">
-    function changeColor(btn) {
-      btn.style.backgroundColor = "green";
-    }
-    </script>
+
 </head>
 <body>
-<h2>Por favor escoge tu opción de Juego: </h2>
+<h2>JUGAR CON PREGUNTAS DE TIPO: </h2>
 <div class="wrapper">
 
 <form action="/action_page.php" method="get" name="form1">
   <ol>
-  <li><button type="button" onclick="changeColor(this)" name="cultura"><h3>Cultura General</h3></button></li>
-  <li><button type="button" onclick="changeColor(this)" name="Miscelanea"><h3>Miscelanea</h3></button></li>
-  <li><button type="button" onclick="changeColor(this)" name="Cine"><h3>Cine</h3></button></li>
+  <li><button type="button" id="botonWindowOpen" name="cultura"><h3>CULTURA GENERAL</h3></button></li>
+  <li><button type="button" id="botonWindow3" name="Miscelanea"><h3>MISCELANEA</h3></button></li>
+  <li><button type="button" id="botonWindow4" name="Cine"><h3>CINE</h3></button></li>
   </ol>
 </form>
 </div>
+<script>
+  //Variable que almacena el método window.open()
+  var miVentana;
+  var miVentana2;
+  var miVentana3;
 
+  //La función window_open crea el pop-up o ventana emergente
+  function window_open(){
+    miVentana = window.open( "pagina2.html", "nombrePop-Up", "width=380,height=500, top=85,left=50");
+  }
+
+  //La función window_close cerrara el pop-up o ventana emergente
+  function window2(){
+      miVentana2 = window.open( "pagina3.html", "nombrePop-Up", "width=380,height=500, top=85,left=50");
+    miVentana.close();
+  }
+  function window3(){
+      miVentana3 = window.open( "pagina4.html", "nombrePop-Up", "width=380,height=500, top=85,left=50");
+    miVentana.close();
+  }
+
+  // Llamo a la función window_open en el evento click del botón con id = "botonWindowOpen"
+  document.getElementById("botonWindowOpen").onclick = function() {window_open()};
+  document.getElementById("botonWindow3").onclick = function() {window2()};
+  document.getElementById("botonWindow4").onclick = function() {window3()};
+
+  // Llamo a la función window_close en el evento click del botón con id = "botonWindowClose"
+  document.getElementById("botonWindowClose").onclick = function() {window_close()};
+</script>
 </body>
 </html>
