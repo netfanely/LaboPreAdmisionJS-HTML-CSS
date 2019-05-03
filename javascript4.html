@@ -1,0 +1,29 @@
+<!-- Determinar si dos números son pares n,
+Si n y m son pares retornar true, sino retornar false -->
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+    function comprobar(n1,n2){
+     var resultado, aux = 1;
+
+      var divide = 1;
+      divide = n1%n2;
+      
+      if(divide==0) {//es par
+        return true;
+      } else {
+        return false;
+      }
+
+    }
+    var numero = prompt("Ingrese primer número", "4");
+    var numero2 = prompt("Ingrese segundo numero","10")
+
+    const output = comprobar(numero,numero2);
+    console.log(output);
+  </script>
+
+</body>
+</html>
