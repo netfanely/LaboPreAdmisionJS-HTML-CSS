@@ -1,0 +1,29 @@
+<!-- Crear una función que compruebe si un numero es par o impar.
+Implementar la function comprobar(n), puedes usar %
+Si es par retornar 0 / Si es impar retorna 1-->
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+    function comprobar(n){
+     var resultado, aux = 1;
+
+      var divide = 1;
+      divide = n%2;
+
+      if(divide==0) {//es par
+        return 0;
+      } else {
+        return 1;
+      }
+
+    }
+    var numero = prompt("Ingrese un número", "4");
+
+    const output = powerOfTwo(numero);
+    console.log(output);
+  </script>
+
+</body>
+</html>
