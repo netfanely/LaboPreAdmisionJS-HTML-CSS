@@ -4,12 +4,14 @@
 <body>
 
   <script>
-    function powerOfTwo(numero){
+    function powerOfTwo(n){
      var resultado = 0;
-     resultado= numero * numero;
+     resultado= n * n;
      return resultado;
     }
-    const output = powerOfTwo(10);
+    var numero = prompt("Ingrese un número", "12");
+
+    const output = powerOfTwo(numero);
     console.log(output); // -> 1024
   </script>
 

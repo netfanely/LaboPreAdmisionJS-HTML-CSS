@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+    function powerOfTwo(n){
+     var resultado, aux = 1;
+
+     if( n==0 | n<0 ){
+       return 1;
+     }
+     else{
+       for(i=0; i<n; i++){
+          resultado = 2 * aux;
+          aux = resultado;
+       }
+       return resultado;
+     }
+
+    }
+    var numero = prompt("Ingrese un número", "4");
+
+    const output = powerOfTwo(numero);
+    console.log(output);
+  </script>
+
+</body>
+</html>
